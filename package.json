@@ -1,0 +1,22 @@
+{
+	"name": "rotating_card",
+	"version": "1.0.0",
+	"description": "Simple rotating card when hovered",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/style.css -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alfredoPark-48/rotating_card.git"
+	},
+	"author": "Alfredo Jeonghyun Park",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/alfredoPark-48/rotating_card/issues"
+	},
+	"homepage": "https://github.com/alfredoPark-48/rotating_card#readme",
+	"devDependencies": {
+		"node-sass": "^5.0.0"
+	}
+}
