@@ -5,5 +5,45 @@
   padding: 0;
   box-sizing: inherit; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   box-sizing: border-box; }
+
+.card {
+  width: 40%;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 40rem; }
+  .card__side {
+    height: 40rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.4);
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    transition: all 1s ease;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .card__side--front {
+      background-image: linear-gradient(to right bottom, #f3f9a7, #cac531); }
+    .card__side--back {
+      background-image: linear-gradient(to right bottom, #005c97, #363795);
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
+.container {
+  height: 100vh;
+  background-image: linear-gradient(to right, #56ab2f, #a8e063);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
